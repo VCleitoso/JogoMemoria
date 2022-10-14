@@ -4,12 +4,12 @@ import 'package:untitled/widgets/score_board.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -62,15 +62,15 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
           SizedBox(
-            /*
+
             //Modo desktop
             height: screen_width/3.5,
-            width: screen_width/3.5,*/
+            width: screen_width/3.5,
 
             //Modo mobile
+/*
             height: screen_width,
-            width: screen_width,
-
+            width: screen_width, */
 
             
             child: GridView.builder(
