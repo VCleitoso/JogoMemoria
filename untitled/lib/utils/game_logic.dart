@@ -1,4 +1,4 @@
-class Game{
+class Game {
   final String hiddenCardPath = '/images/hidden.png';
   List<String>? gameImg;
   final List<String> cards_list = [
@@ -17,7 +17,7 @@ class Game{
   final int cardCount = 8;
 
   //iniciar o jogo
-  void initGame(){
+  void initGame() {
     gameImg = List.generate(cardCount, (index) => hiddenCardPath);
   }
 }

@@ -149,11 +149,43 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(color: Colors.black, fontSize: 15),
               ),
               onPressed: () {
-                //apagar();
-                growableListPontos.add(pontos);
-                growableListTentativas.add(tentativas);
-                tamanho.add(growableListPontos.length);
-                //preencher();
+                if (tamanho[0] == 0) {
+                  growableListPontos[0] = pontos;
+                  growableListTentativas[0] = tentativas;
+                  tamanho[0] = 1;
+                  a1 = tamanho[0];
+                  b1 = growableListPontos[0];
+                  c1 = growableListTentativas[0];
+                } else if (tamanho[1] == 0) {
+                  growableListPontos[1] = pontos;
+                  growableListTentativas[1] = tentativas;
+                  tamanho[1] = 2;
+                  a2 = tamanho[1];
+                  b2 = growableListPontos[1];
+                  c2 = growableListTentativas[1];
+                } else if (tamanho[2] == 0) {
+                  growableListPontos[2] = pontos;
+                  growableListTentativas[2] = tentativas;
+                  tamanho[2] = 3;
+                  a3 = tamanho[2];
+                  b3 = growableListPontos[2];
+                  c3 = growableListTentativas[2];
+                } else if (tamanho[3] == 0) {
+                  growableListPontos[3] = pontos;
+                  growableListTentativas[3] = tentativas;
+                  tamanho[3] = 4;
+                  a4 = tamanho[3];
+                  b4 = growableListPontos[3];
+                  c4 = growableListTentativas[3];
+                } else if (tamanho[4] == 0) {
+                  growableListPontos[4] = pontos;
+                  growableListTentativas[4] = tentativas;
+                  tamanho[4] = 5;
+                  a5 = tamanho[4];
+                  b5 = growableListPontos[4];
+                  c5 = growableListTentativas[4];
+                }
+
                 Navigator.push(
                     context,
                     MaterialPageRoute(
