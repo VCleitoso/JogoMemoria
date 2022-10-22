@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return MaterialApp(
+      home: HomePage(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
 
@@ -146,9 +149,11 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(color: Colors.black, fontSize: 15),
               ),
               onPressed: () {
+                //apagar();
                 growableListPontos.add(pontos);
                 growableListTentativas.add(tentativas);
                 tamanho.add(growableListPontos.length);
+                //preencher();
                 Navigator.push(
                     context,
                     MaterialPageRoute(
